@@ -2,5 +2,7 @@
 services:
   server:
     image: express-docker
+    ports:
+      - 5050:5000
   mongodb:
     image: mongo
