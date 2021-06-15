@@ -3,6 +3,8 @@ services:
   server:
     build: ./server
     command: npm run dev
+    volumes:
+      - ./server/src/:/app/src/
     ports:
       - 5050:5000
   mongodb:
