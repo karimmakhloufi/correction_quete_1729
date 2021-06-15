@@ -9,3 +9,5 @@ services:
       - 5050:5000
   mongodb:
     image: mongo
+    volumes:
+      - ./data:/data/db
