@@ -1,7 +1,7 @@
 # docker-compose.yml
 services:
   server:
-    image: express-docker
+    build: ./server
     ports:
       - 5050:5000
   mongodb:
