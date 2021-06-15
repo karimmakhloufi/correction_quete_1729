@@ -1,3 +1,6 @@
+# docker-compose.yml
 services:
-  app:
-    image: karimwcs/hello-app
+  server:
+    image: express-docker
+  mongodb:
+    image: mongo
