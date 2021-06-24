@@ -36,3 +36,12 @@ jobs:
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
+  test-front:
+    runs-on: ubuntu-latest
+    steps:
+      - 
+        name: Check out code
+        uses: actions/checkout@v2
+      -
+        name: Goto client and run tests
+        run: cd client && npm i && npm test
