@@ -6,13 +6,6 @@ on:
       - "master"
 
 jobs:
-  test-front:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v2
-      - name: Goto client and run tests
-        run: cd client && npm i && npm test
   docker:
     needs: test-front
     runs-on: ubuntu-latest
