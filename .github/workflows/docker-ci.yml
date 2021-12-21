@@ -35,6 +35,6 @@ jobs:
           context: ./server
           file: ./server/Dockerfile
           push: true
-          tags: dadtmt/server-demo:latest
+          tags: karimwcs/citest
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
