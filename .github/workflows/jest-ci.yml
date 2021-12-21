@@ -2,8 +2,8 @@ name: jest-ci
 
 on:
   push:
-    branches:
-      - "!master"
+    branches-ignore:
+      - "master"
 
 jobs:
   test-front:
