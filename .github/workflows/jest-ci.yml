@@ -1,9 +1,7 @@
-name: jest-ci
+name: jest-ci-on-pr
 
 on:
-  push:
-    branches-ignore:
-      - "master"
+  pull_request:
 
 jobs:
   test-front:
